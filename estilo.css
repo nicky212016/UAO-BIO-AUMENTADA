@@ -1,0 +1,240 @@
+.modelito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Ajusta la altura según tus necesidades */
+  width: auto; /* Ancho del 100% del contenedor padre */
+}
+
+.mdl-layout__content {
+  justify-content: center;
+  align-items: center;
+}
+/* Estilos para centrar los botones */
+.botones-container {
+  text-align: center;
+}
+
+.boton {
+  padding: 20px 40px;
+  font-size: 18px;
+  background-color: rgb(232, 2, 2);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px auto; /* Ajuste para centrar horizontalmente */
+  display: block; /* Convertir los botones en bloques para que ocupen todo el ancho disponible */
+  max-width: 200px; /* Establecer un ancho máximo para los botones */
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+.boton:hover {
+  background-color: black;
+}
+
+.flex-container {
+  background-color: rgb(250, 215, 215);
+
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%; /* Adjust if needed */
+  display: flex;
+}
+
+.ConContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ConContainer button {
+  margin: 10px; /* Añade un margen entre los botones */
+  /* Ajusta el espacio interno del botón */
+  width: 150px; /* Ancho fijo para los botones */
+  cursor: pointer;
+}
+
+/* el primero lo sube */
+.flex-container1 {
+  background-color: rgb(250, 215, 215);
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%; /* Adjust if needed */
+  display: none;
+}
+
+.container {
+  background-color: rgb(62, 17, 74);
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Adjust if needed */
+  display: flex;
+}
+.tabla_actividades {
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  height: 25%;
+  max-height: 0%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.tabla {
+  border-collapse: collapse; /* Combina los bordes de celda adyacentes */
+  width: 100%; /* Ancho de la tabla */
+}
+.tabla th,
+.tabla td {
+  border: 1px solid #ddd; /* Borde de las celdas */
+  padding: 8px;
+  vertical-align: middle; /* Espaciado interno de las celdas */
+  text-align: left; /* Alineación del texto dentro de las celdas */
+  word-wrap: break-word; /* Dividir palabras largas en dos líneas */
+  white-space: normal; /* Forzar el texto a ajustarse */
+  overflow-wrap: break-word;
+  word-break: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tabla td {
+  max-width: 300px;
+}
+.mdl-textfield__input {
+  max-width: 150px;
+}
+.tabla th {
+  background-color: #f2f2f2; /* Color de fondo de las celdas del encabezado */
+}
+.tabla tr:nth-child(even) {
+  background-color: #f2f2f2; /* Color de fondo de las celdas pares */
+}
+.tabla tr:hover {
+  background-color: #ddd; /* Color de fondo al pasar el cursor sobre las filas */
+}
+
+.a {
+  background-color: #ddd;
+}
+
+.demo-card-wide.mdl-card {
+  width: 512px;
+}
+
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+.mdl-layout__header {
+  background-color: rgb(190, 0, 0); /* Fondo rojo */
+}
+
+.mdl-layout__header-row {
+  background-color: rgb(190, 0, 0); /* Fondo rojo */
+}
+#botonConsejo {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.columna-imagen {
+  flex: 1; /* La columna de la imagen tomará la mitad del espacio disponible */
+  display: flex; /* Utilizamos flexbox para centrar la imagen verticalmente */
+  justify-content: center; /* Centramos la imagen horizontalmente */
+  align-items: center;
+  padding: 0px; /* Centramos la imagen verticalmente */
+}
+.columna-texto {
+  flex: 1; /* La columna del texto tomará la mitad del espacio disponible */
+  display: flex;
+  text-align: justify; /* Utilizamos flexbox para centrar el texto verticalmente */
+  justify-content: center; /* Centramos el texto horizontalmente */
+  align-items: center; /* Centramos el texto verticalmente */
+  background-color: white;
+  padding: 0 120px; /* Color de fondo para la columna del texto */
+}
+.texto {
+  max-width: 20%; /* Limitamos el ancho del texto para que no ocupe toda la pantalla */
+  text-align: center; /* Centramos el texto horizontalmente */
+}
+.columna-imagen1 {
+  flex: 1; /* La columna de la imagen tomará la mitad del espacio disponible */
+  display: flex; /* Utilizamos flexbox para centrar la imagen verticalmente */
+  justify-content: center; /* Centramos la imagen horizontalmente */
+  /*align-items: upper;  Centramos la imagen verticalmente */
+  background-color: white; /* Color de fondo para la columna de la imagen */
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semitransparente */
+  color: white;
+  z-index: 9999; /* Z-index alto para asegurar que esté por encima de otros elementos */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.columna {
+  width: 50%;
+  float: left;
+}
+@media (max-width: 600px) {
+  .columna {
+    width: 100%;
+    float: none;
+  }
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 100%;
+  background-image: url("https://cdn.pixabay.com/photo/2022/03/17/06/21/geometrical-texture-7073849_1280.png"); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen */
+  background-size: cover;
+  z-index: -100; /* Esto coloca el contenedor detrás del resto del contenido */
+}
+
+.imagen-de-fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Coloca la imagen detrás del contenido */
+  /* Ajusta la opacidad si es necesario */
+}
+.pie-de-pagina {
+  background-color: rgb(190, 0, 0); /* Fondo rojo */
+  color: white; /* Texto blanco para contrastar */
+  text-align: center; /* Centra el texto horizontalmente */
+  padding: 5px; /* Espaciado interno para el contenido */
+  position: fixed; /* Fija el pie de página */
+  bottom: 0px; /* Lo coloca al final de la ventana del navegador */
+  width: 100%; /* Asegura que ocupe todo el ancho */
+}
+.modelito {
+  height: 100%;
+  width: 100%;
+}
+
+.mdl-layout-title {
+  margin-left: auto; /* Ajusta este valor según necesites */
+}
+
+.mdl-layout-titleM {
+  margin-left: auto; /* Ajusta este valor según necesites */
+}
+
+.mdl-layout__header-row img {
+  margin-left: auto;
+}

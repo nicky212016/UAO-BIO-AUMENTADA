@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+
+  <title>Dispositivos UAO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.red-deep_orange.min.css" />
+  <script type="module">
+    import 'https://unpkg.com/@google/model-viewer/dist/model-viewer.js';
+  </script>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+<body onload="cargarModelo()">
+
+  <img src="https://img.freepik.com/vector-gratis/fondo-gris-pologonal_1055-3164.jpg?t=st=1713277643~exp=1713281243~hmac=15ef331e69d8f8c3d4f6f0537dfff9f22e39e8a44b2d1faac40575e146382f32&w=740" class="imagen-de-fondo" alt="Imagen de fondo">
+
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <!-- Cabecera de la aplicación -->
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Botón de retroceso -->
+        <button onclick="window.location.href = 'index.html'" class="mdl-button mdl-js-button mdl-button--icon">
+          <i class="material-icons">arrow_back</i>
+        </button>
+        <!-- Título de la aplicación -->
+        <span class="mdl-layout-titleM">Dispositivos Biomédicos UAO</span>
+        <img src="multimedia\logouao3.png" width="50" height="50" alt="Imagen" />
+        <div class="mdl-layout-spacer"></div>
+      </div>
+    </header>
+
+    <div id="modelo3D" class="modelito"></div>
+
+    <script>
+      function mostrarModelo3D() {
+        // Crea un nuevo elemento model-viewer
+        var modelViewer = document.createElement('model-viewer');
+        // Configura los atributos del modelo 3D
+        console.log("Mostrando modelo 3D"); // Mensaje de depuración
+        modelViewer.src = "exportado/LA TERCERA ES LA VENCIDA.gltf";
+        modelViewer.setAttribute('ar', '');
+        modelViewer.setAttribute('ar-modes', 'scene-viewer webxr quick-look');
+        modelViewer.setAttribute('camera-controls', '');
+        modelViewer.style.width = '2000px';
+        modelViewer.style.height = '1000px';
+        // Agrega el modelo 3D al contenedor en tu página
+        document.getElementById('modelo3D').appendChild(modelViewer);
+        <br>
+      }
+    </script>
+
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <div class="ccontainer" id="welcome">
+          <div class="contenedor">
+            <div class="columna-imagen"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+  <script src="sketch2.js"></script>
+
+  <!-- etiqueta para colocar modelo 3D -->
+
+  
+
+</body>
+</html>
